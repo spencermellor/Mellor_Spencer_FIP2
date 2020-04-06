@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+  <title>Holsten - Brewing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h1 class="hidden">Holsten - Home</h1>
+
+    <div class="mainNav">
+        <h2 class="hidden">Main Nav</h2>
+
+        <div class="leftNav">
+            <ul>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="new-products.html">NEW</a></li>
+            </ul>
+        </div>
+
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Holsten Logo"></a>
+        </div>
+
+        <div class="rightNav">
+            <ul>
+                <li><a class="active" href="brewing.html">BREWING</a></li>
+                <li><a href="your-stories.html">STORIES</a></li>
+            </ul>
+        </div>
+    </div> <!-- end of mainNav -->
+
+    <div class="burger-logo">
+        <a href="#"><img id="burg-logo" src="images/logo.png" alt="Holsten Logo"></a>
+    </div>
+
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="new-products.html">New Products</a></li>
+            <li><a class="active2" href="brewing.html">BREWING</a></li>
+            <li><a href="your-stories.html">Your Stories</a></li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+
+    <div class="brewingContainer">
+
+        <div class="brewingBanners">
+            <img src="images/brewing-banner.jpg" alt="See How Its Made Graphic">
+        </div>
+
+        <section class="craftingPerfection">
+            <h2 class="hidden">Crafting Perfection Text</h2>
+            <p class="brewingTitle">Crafting Perfection</p>
+            <p>At Holsten, we are more than just premium beer. We're about perfection, excellence, and about those who like to enjoy "the finer things in life". We take our brewing process seriously, every bottle you open has been brewed the exact same way since 1879.</p>
+            <br>
+            <p id="craftingFinish">Please, keep our secret a secret.</p>
+            <hr class="brewingHR">
+        </section>
+
+        <section>
+            <h2 class="hidden">The Four Step Process</h2>
+
+            <div>
+                <p class="brewingTitle">The Four Step Process</p>
+                <p class="craftingPerfection">Scroll Over each image for more details.</p>
+            </div>
+
+            <div class="process">
+                <div class="imageContainer">
+                    <img src="images/prepare.png" alt="" class="processImage">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="text-title">Prepare</p>
+                            <p class="text-subtitle">We only use the best</p>
+                            <br>
+                            <p>Heres what your drinking:</p>
+                            <br>
+                                <ul>
+                                    <li>Water</li>
+                                    <li>Malted Bartley</li>
+                                    <li>Glucose Syrup</li>
+                                    <li>Hops</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imageContainer">
+                    <img src="images/brew.png" alt="" class="processImage">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="text-title">Brew</p>
+                            <p class="text-subtitle">Brewing is our middle name</p>
+                            <br>
+                            <p>We heat our water to the perfect</p>
+                            <p>temperature before adding the</p>
+                            <p>"secret sauce" to properly</p>
+                            <p>ariate the wort.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imageContainer">
+                    <img src="images/ferment.png" alt="" class="processImage">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="text-title">Ferment</p>
+                            <p class="text-subtitle">This is where the yeast is added</p>
+                            <br>
+                            <p>We let our beer sit for a</p>
+                            <p>minimum of three weeks before</p>
+                            <p>heading off to be bottled!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imageContainer">
+                    <img src="images/bottle.png" alt="" class="processImage">
+                    <div class="overlay">
+                        <div class="text">
+                            <p class="text-title">bottle</p>
+                            <p class="text-subtitle">Our last step, your favourite</p>
+                            <br>
+                            <p>We let the beer carbonate</p>
+                            <p>another two weeks prior</p>
+                            <p>to hitting the shelf!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="brewingBanners">
+            <video src="images/crafting-perfection.mp4" muted autoplay loop></video>
+        </div>
+
+    </div> <!-- end of brewingContainer -->
+
+    <section id="mainFooter">
+    <h2 class="hidden">Footer</h2>
+        <div id="left-footer">
+
+            <div>
+                <p><a href="contact.html">CONTACT US</a></p>
+                <p>SIGN UP FOR EMAIL</p>
+            </div>
+
+            <div class="footer-image">
+                <a href="#"><img src="images/instagram-footer.png" alt="Link To Instgram" id="ig" class="footer-image-space"></a>
+                <a href="#"><img src="images/facebook-footer.png" alt="Link To Facebook" id="fb" class="footer-image-space"></a>
+                <a href="#"><img src="images/youtube-footer.png" alt="Link To YouTube" id="yt" class="footer-image-space"></a>
+            </div>
+
+        </div>
+
+        <div id="footer-logo">
+            <img src="images/logo.png" alt="Holsten Logo">
+        </div>
+
+        <div id="right-footer">
+            <p>HOLSTEN BREWERY</p>
+            <p>137 DUNDAS STREET</p>
+            <p>LONDON, ON</p>
+        </div>
+
+    </section> <!-- end of mainFooter -->
+
+
+</div> <!-- end of container -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
