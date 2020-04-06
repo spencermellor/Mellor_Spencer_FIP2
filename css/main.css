@@ -17,6 +17,7 @@
 
 /* Header Elements Start */
 
+
 .mainNav {
     margin: 0 auto;
     display: flex;
@@ -40,6 +41,7 @@
 
 .logo:hover {
     cursor: pointer;
+    opacity: 60%;
 }
 
 .leftNav {
@@ -62,18 +64,24 @@
     margin-left: -40px;
 }
 
+.active {
+    background-color: #255f99;
+    border-radius: 3px;
+}
+
 .mainNav ul li a {
     color: white;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: .1em;
     font-size: 20px;
     text-decoration: none;
     padding: 10px;
-    font-weight: bold;
 }
 
 .mainNav ul li a:hover {
-    text-shadow: 5px 10px 5px #333;
-    opacity: 70%;
+    background-color: #255f99;
+    border-radius: 3px;
 }
 
 .rightNav ul li {
@@ -96,6 +104,11 @@
     width: 70%;
 }
 
+#burg-logo:hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+
 #menu{
 	width: 35px;
 	height: 30px;
@@ -105,7 +118,7 @@
 .bar{
 	height: 5px;
 	width: 100%;
-	background-color: #fad22f;
+	background-color: #fff;
 	display: block;
 	border-radius: 5px;
 	transition: 0.3s ease;
@@ -118,7 +131,7 @@
 }
 .nav li a{
 	color: #fff;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 	text-decoration: none;
@@ -126,8 +139,8 @@
 }
 .nav li a:hover{
 	font-weight: bold;
-    color: #1a4772;
-    background-color: #b89a23;
+    color: #fff;
+    background-color: #1a4772;
     border-radius: 3px;
 }
 .nav li{
@@ -150,7 +163,7 @@
 	width: 0;
 	height: 0;
 	margin: 30px 0 20px 20px;
-	background: #fad22f;
+	background: #255f99;
 	border-radius: 50%;
 	transition: 0.3s ease;
 }
@@ -177,6 +190,11 @@
 }
 .change{
 	display: block;
+}
+
+.active2 {
+    background-color: #1a4772;
+    border-radius: 3px;
 }
 
 /* Header Elements Close */
@@ -268,6 +286,10 @@
     text-align: center;
 }
 
+#footer-logo img:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
 /* Footer Elements Close */
 
 /* Index Page Elements Start  */
@@ -387,25 +409,340 @@
 .random {
     display: flex;
     flex-direction: row;
+    font-family: Helvetica, sans-serif;
     margin: 0 auto;
+    line-height: 1.3em;
+    color: #1a4772;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.random img {
+    width: 100%;
+    z-index: 1;
 }
 
 .product-title {
     font-weight: bold;
-    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
-.random p {
+#bottle-ad-space {
+    margin-top: 3%;
+}
+
+/* End of New Products Elements */
+
+/* Start of About Us Elements */
+
+.aboutUsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aboutUsBanners {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.aboutUsBanners img {
+    width: 100%;
+    z-index: 1;
+}
+
+.aboutUsStory {
+    margin-top: 3%;
     text-transform: uppercase;
-    text-align: center;
     font-family: Helvetica, sans-serif;
     color: #1a4772;
-    font-size: 20px;
+    line-height: 1.4em;
 }
+
+#aboutUsStoryExtended {
+    display: none;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    color: #1a4772;
+    line-height: 1.4em;
+}
+
+#aboutUsStoryExtended img {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    border: 5px solid #fad22f;
+    border-radius: 4px;
+    max-width: 500px;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.ViewMorebtn {
+    display: flex;
+    margin: 0 auto;
+    background-color: #fad22f;
+    padding: 1% 2% 1% 2%;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.ViewMorebtn:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+#hook {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 2%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.picture-text {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1%;
+}
+
+.aboutUsImgContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.aboutUsPictures {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.aboutUsPictures img {
+    width: 100%;
+    z-index: 1;
+}
+
+#finish {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.3em;
+    font-weight: bold;
+    margin-bottom: 2%;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* End of New Products Elements */
+
+/* Start Of Brewing Elements */
+
+.brewingContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brewingBanners {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.brewingBanners img {
+    width: 100%;
+    z-index: 1;
+}
+
+.brewingBanners video {
+    width: 100%;
+    z-index: 1;
+}
+
+.craftingPerfection {
+    margin-top: 3%;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    color: #1a4772;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.craftingPerfection p {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.brewingTitle {
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: .2em;
+    font-family: 'Oswald', sans-serif;
+    color: #1a4772;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.brewingHR {
+    color: #1a4772;
+    width: 70%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border: 1px solid #1a4772;
+}
+
+#craftingFinish {
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.process {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imageContainer {
+    position: relative;
+    width: 25%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    border: 8px solid #1a4772;
+}
+
+.processImage {
+    display: inline;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1a4772;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.imageContainer:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.text-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.text-subtitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: .9em;
+    margin-top: 3%;
+}
+
+
+/* End of Brewing Elements */
+
+/* Start of your-stories Elements */
+
+.storiesContainer {
+        max-width: 1200px;
+        margin: 0 auto;
+}
+
+.friendsBanners {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.friendsBanners img {
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+/* End of your-stories Elements */
 
 /* Start Of Responsive Website */
 
-@media screen and (max-width: 952px) {
+@media screen and (max-width: 1200px) {
+
+    #aboutUsStoryExtended {
+        display: none;
+        text-transform: uppercase;
+        font-family: Helvetica, sans-serif;
+        color: #1a4772;
+        line-height: 1.4em;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .aboutUsStory {
+        margin-top: 3%;
+        margin-left: 4%;
+        margin-right: 4%;
+        text-transform: uppercase;
+        font-family: Helvetica, sans-serif;
+        color: #1a4772;
+        line-height: 1.4em;
+    }
+
+    #hook {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 2%;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
 
     #menu-bar {
         z-index: 10;
@@ -426,6 +763,13 @@
         width: 100%;
         background-color: #255f99;
         justify-content: center;
+    }
+
+    #hook {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 2%;
     }
 }
 
@@ -448,6 +792,14 @@
     #yt {
         width: 39px;
         height: 27px;
+    }
+
+    #finish {
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        font-weight: bold;
+        margin-bottom: 2%;
     }
 
 }
