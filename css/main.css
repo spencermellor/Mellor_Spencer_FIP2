@@ -705,9 +705,175 @@
     z-index: 1;
 }
 
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    align-items: center;
+}
 
+.testimonials img {
+    width: 200%;
+    height: auto;
+    border: 5px solid #1a4772;
+    border-radius: 150px;
+    margin-right: 15%;
+}
+
+.testimonial-text {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    color: #1a4772;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.3em;
+}
+
+.testimonial-text-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #1a4772;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -5%;
+    margin-bottom: 3%;
+}
+
+.testimonial-name {
+    font-size: 2em;
+    letter-spacing: .1em;
+    margin-bottom: 1%;
+}
+
+.storiesHR {
+    border: 1px solid #1a4772;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.storiesTitle {
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: .2em;
+    font-family: 'Oswald', sans-serif;
+    color: #1a4772;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+
+.storiesSubtitle {
+    margin-top: 3%;
+    margin-bottom: 6%;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    color: #1a4772;
+    line-height: 1.4em;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.fav-beer {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #1a4772;
+    text-transform: uppercase;
+}
+
+#topHR {
+    margin-bottom: 10%;
+}
+
+#grabYours {
+    margin-top: 5%;
+}
 
 /* End of your-stories Elements */
+
+/* Start of Contact Elements */
+
+.contactContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.widthContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactHeader {
+    font-size: 5em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #1a4772;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#contactSubheader {
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    margin-top: 2%;
+    color: #1a4772;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form {
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-control {
+    width: 60%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-bottom: 3%;
+    border: none;
+    border-bottom: 3px solid #1a4772;
+}
+
+.submit {
+    background-color: #fad22f;
+    color: #1a4772;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    border-bottom: none;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background-color: #1a4772;
+    color: #fad22f;
+    cursor: pointer;
+}
+
+.message {
+    border: 1px solid #1a4772;
+}
+
+.contact-banner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.contact-banner img {
+    width: 100%;
+}
+
+/* End of Contact Elements */
 
 /* Start Of Responsive Website */
 
@@ -771,6 +937,82 @@
         font-weight: bold;
         margin-bottom: 2%;
     }
+
+    .brewingTitle {
+        margin-bottom: 2%;
+        font-weight: bold;
+        font-size: 1.6em;
+        letter-spacing: .2em;
+        font-family: 'Oswald', sans-serif;
+        color: #1a4772;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .storiesTitle {
+        margin-bottom: 2%;
+        font-weight: bold;
+        font-size: 2em;
+        letter-spacing: .2em;
+        font-family: 'Oswald', sans-serif;
+        color: #1a4772;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 3%;
+    }
+
+    .testimonial-text {
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-family: Helvetica, sans-serif;
+        color: #1a4772;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1em;
+    }
+
+    .testimonials img {
+        width: 150%;
+        height: auto;
+        border: 5px solid #1a4772;
+        border-radius: 150px;
+        margin-right: 15%;
+    }
+
+    .storiesSubtitle {
+        margin-top: 3%;
+        margin-bottom: 6%;
+        text-transform: uppercase;
+        font-family: Helvetica, sans-serif;
+        color: #1a4772;
+        line-height: 1.4em;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .form-control {
+        width: 75%;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        margin-bottom: 3%;
+        border: none;
+        border-bottom: 3px solid #1a4772;
+    }
+
+    .submit {
+        background-color: #fad22f;
+        color: #1a4772;
+        font-size: 1.5em;
+        letter-spacing: .1em;
+        border-bottom: none;
+        font-weight: bold;
+    }
+
+    .message {
+        border: 1px solid #1a4772;
+    }
 }
 
 @media screen and (max-width: 628px) {
@@ -802,6 +1044,51 @@
         margin-bottom: 2%;
     }
 
+    .imageContainer {
+        position: relative;
+        width: 40%;
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 3%;
+        border: 8px solid #1a4772;
+    }
+
+    .text-subtitle {
+        font-family: 'Oswald', sans-serif;
+        font-size: .7em;
+        margin-top: 3%;
+    }
+
+    .text {
+        font-size: 1em;
+    }
+
+    .storiesTitle {
+        margin-bottom: 2%;
+        font-weight: bold;
+        font-size: 1.5em;
+        letter-spacing: .2em;
+        font-family: 'Oswald', sans-serif;
+        color: #1a4772;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 3%;
+    }
+
+    .storiesSubtitle {
+        margin-top: 3%;
+        margin-bottom: 6%;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-transform: uppercase;
+        font-family: Helvetica, sans-serif;
+        color: #1a4772;
+        line-height: 1.4em;
+        text-align: center;
+        font-size: .9em;
+    }
+
 }
 
 @media screen and (max-width: 526px) {
@@ -828,5 +1115,15 @@
         width: 30px;
         height: 20px;
     }
+
+    .product-title {
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 1.2em;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+    }
+
 
 }
