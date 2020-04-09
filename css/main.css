@@ -295,7 +295,6 @@
 /* Index Page Elements Start  */
 
 .about-us {
-    position: relative;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -306,24 +305,9 @@
     z-index: 1;
 }
 
-.btn {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    background-color: #fad22f;
-    padding: 1% 2% 1% 2%;
-    text-align: center;
-    font-size: 100%;
-    font-weight: bold;
-}
-
-.btn a {
-    color: white;
-    text-decoration: none;
-}
-
-#aboutUsBtn {
-    right: -2%;
-    bottom: 2%;
+.about-us img:hover {
+    opacity: 90%;
+    cursor: pointer;
 }
 
 .new-products {
@@ -338,9 +322,9 @@
     z-index: 2;
 }
 
-#newProductsBtn {
-    right: 31.5%;
-    bottom: 31.5%;
+.new-products img:hover {
+    opacity: 90%;
+    cursor: pointer;
 }
 
 .how-its-made {
@@ -355,9 +339,9 @@
     z-index: 3;
 }
 
-#howItsMadeBtn {
-    right: 28.5%;
-    bottom: 3%;
+.how-its-made img:hover {
+    opacity: 90%;
+    cursor: pointer;
 }
 
 .your-stories {
@@ -367,15 +351,17 @@
     margin: 0 auto;
 }
 
+
 .your-stories img {
     width: 100%;
     z-index: 4;
 }
 
-#yourStoriesBtn {
-    right: 33%;
-    bottom: 3%;
+.your-stories img:hover {
+    opacity: 90%;
+    cursor: pointer;
 }
+
 
 /* End of Index Page Elements */
 
@@ -431,8 +417,55 @@
     text-transform: uppercase;
 }
 
+.products div {
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
 #bottle-ad-space {
     margin-top: 3%;
+}
+
+#doctor {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('../images/holsten-doctor.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 230px;
+}
+
+#doctor:hover {
+    background-image: url('../images/holsten-doctor.gif');
+}
+
+#pilsner {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('../images/holsten-pilsner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 230px;
+}
+
+#pilsner:hover {
+    background-image: url('../images/holsten-pilsner.gif');
+}
+
+#remove {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('../images/holsten-remove.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 230px;
+}
+
+#remove:hover {
+    background-image: url('../images/holsten-remove.gif');
 }
 
 /* End of New Products Elements */
@@ -543,7 +576,7 @@
     font-family: 'Oswald', sans-serif;
 }
 
-/* End of New Products Elements */
+/* End of About Us Elements */
 
 /* Start Of Brewing Elements */
 
@@ -690,8 +723,8 @@
 /* Start of your-stories Elements */
 
 .storiesContainer {
-        max-width: 1200px;
-        margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .friendsBanners {
@@ -1124,6 +1157,4 @@ form {
         font-family: 'Oswald', sans-serif;
         text-transform: uppercase;
     }
-
-
 }
