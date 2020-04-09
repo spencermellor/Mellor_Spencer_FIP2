@@ -294,6 +294,20 @@
 
 /* Index Page Elements Start  */
 
+.index-ad {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: .2%;
+}
+
+.index-ad video {
+    width: 100%;
+    z-index: 1;
+}
+
 .about-us {
     width: 100%;
     max-width: 1200px;
